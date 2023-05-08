@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Untitled</title>
+	<style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+		body {
+			background-color: #ffffff; /* light grey */
+			color: #000000; /* dark grey */
+			font-family: 'Open Sans', sans-serif;
+			margin: 0;
+			padding: 0;
+			margin-right: 300px;
+			margin-left: 300px;
+			
+		}
+		.container {
+			max-width: 1300px;
+			margin: 0 auto;
+			padding: 110px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		
+		.box {
+			background-color: #ffffff; /* white */
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			margin: 0 auto 24px;
+			padding: 0px;
+			text-align: center;
+			width: 590px;
+		}
+		button{
+			background-color: #222;
+			color: white;
+			border-radius: 25px;
+			width: 150px;
+			height:56px;
+			font-family:'Open Sans', sans-serif;
+			font-size: 16px;
+			margin: 25px;
+			border:0px;
+			transition: width .4s, height 4s, background-color .5s;
+
+		}
+		
+		button:hover{
+			width: 170px;
+			background-color: #8513d6;
+			cursor:pointer;
+		}
+
+		section {
+			margin: 0 auto;
+			margin-top:11%;
+			font-size: 28px;
+			text-align: center;
+
+		}
+
+		desc{
+			font-size: 24px;
+			margin-right: 40px;
+			text-align: left;
+		}
+		
+		
+
+
+		.box h2 {
+			color: #000000; /* purple */
+			font-size: 65px;
+			margin-bottom: 20px;
+		}
+		.box p {
+			font-size: 24px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		.box a {
+			background-color: #6b3692; /* purple */
+			border-radius: 5px;
+			border-color: #222;
+			color: #fff;
+			display: inline-block;
+			font-size: 16px;
+			padding: 10px 20px;
+			text-decoration: none;
+			transition: background-color 0.3s ease-in-out;
+		}
+		.box a:hover {
+			background-color: #4b0082; /* white */
+			color: #ffffff; /* purple */
+		}
+		.header {
+  		position: fixed;
+ 		 top: 0;
+  		left: 0;
+  		width: 98%;
+  		display: flex;
+ 		justify-content: space-between;
+  		align-items: center;
+  		background-color: #8513d6; /* purple */
+  		padding: 20px;
+  		color: #f0f0f0;
+  		font-size: 20px;
+  		font-weight: bold;
+  		z-index: 100;
+		font:bolder;
+}
+
+
+		
+		.header a {
+            position: relative;
+            font-size: 20px;
+			font: bolder;
+            color: #fff;
+            text-decoration: none;
+         	margin-left: 20px;
+         	font-weight: normal;
+}
+
+        .header a::before {
+            content: "";
+            position: absolute;
+             bottom: -5px;
+             left: 0;
+             width: 0;
+          height: 3px;
+          background-color: #fff;
+          transition: width 0.35s ease-in-out;
+}
+
+.header a:hover::before {
+  width: 100%;
+}
+
+		.header ul {
+			list-style-type: none;
+			display: flex;
+			align-items: center;
+			margin: 0;
+		}
+		.header li {
+			margin-left: 20px;
+		}
+		.header li:first-child {
+			margin-left: 0;
+		}
+	</style>
+</head>
+<body style = "height: 3000px;">
+	<header>
+		<div class="header">
+		<span>Untitled</span>
+		<ul>
+			<li><a href="#">Personal</a></li>
+			<li><a href="#">Business</a></li>
+			<li><a href="#">Technology</a></li>
+			<li><a href="#">Development</a></li>
+			<li><a href="#">Jobs</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+	</header>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function() {
+		  var header = document.querySelector("header");
+		  header.classList.toggle("sticky", window.scrollY > 0)
+		})
+	  </script>
+	  
+	
+	<div class="container">
+		<div class="box">
+			<h2>Untitled</h2>
+			<p>Help shape technology while improving your investments, gaining knowledge, and acheving your finacial goals.</p>
+			<a href = '/createaccount'>
+				<button ><b>
+					Sign up
+				</b></button>
+			</a>
+		</div>
+	</div>
+	<knowledge>
+		<div style = 'justify-content: center; font-size: 23px; text-align: center; margin-top: 20%;'>
+			<p style="color: black; font-size: 18px; font-weight: 700; margin-top: 25%;">Say hello to the future of personal banking</p>
+			<h1>Grow your knowledge in just a few seconds</h1>
+			<p>With Untitled right at your fingertips, you can access a wealth of information and grow your knowledge with just a few clicks.</p>
+		</div>
+	</knowledge>
+	
+
+	<desc>
+		<div style="text-align: center;">
+			
+		</div>
+	</desc>
+
+	<desc>
+		<div style="justify-content: center; font-size: 23px; text-align: center; margin-top: 25%;
+		">
+			<h1>Multitask your needs</h1>
+			<p>Keep your finances in order by managing and updating your accounts and payments regularly to avoid penalties, improve credit score, and achieve long-term financial goals.</p>
+		</div>
+	</desc>
+
+	<desc>
+		<div style = "justify-content: center; font-size: 23px; text-align: center; margin-top: 38%;">
+			<h1>Protect your identity & protect your savings</h1>
+			<p>Identity theft can have devastating consequences, from financial loss to reputational damage. By taking steps to protect your identity, you can also safeguard your savings and other assets. Don't wait until it's too late - start taking action today to protect yourself and your finances.</p>
+		</div>
+	</desc>
+
+	<desc>
+		<div>
+			<h1>
+			</h1>
+		</div>
+	</desc>
+
+
+	<footer>
+		<p></p>
+	</footer>
